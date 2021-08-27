@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variable</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --cellwidth: 300px;
+            --boxBG: #faa;
+        }
+
+        /* 10 */
+        .box {
+            width: var(--cellwidth);
+            height: var(--cellwidth);
+            background: var(--boxBG);
+        }
+
+        /* SASS / SCSS */
+
+        /* 10 + 1 */
+        .box1>div {
+            /* color: rgb(101, 91, 190) !important; */
+        }
+
+        /* 10 + 1 */
+        div.box2 {
+            color: khaki;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <div class="box2">
+            box2
+            <div class="box3"></div>
+        </div>
+
+
+        <a href="https://google.com"></a>
+        <a href="https://yahoo.com"></a>
+
+    </div>
+</body>
+
+</html>

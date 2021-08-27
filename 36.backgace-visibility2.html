@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>backface visibility</title>
+    <style>
+        .card-wrap {
+            width: 300px;
+            height: 400px;
+        }
+
+        .card {
+            position: relative;
+            width: 300px;
+            height: 400px;
+            transform-style: preserve-3d;
+            perspective: 1000px;
+            transition: .5s;
+        }
+
+        .card img {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            backface-visibility: hidden;
+        }
+
+        .back {
+            transform: rotateY(180deg);
+        }
+
+        .card-wrap:hover .card {
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card-wrap">
+            <div class="card">
+                <img class="front" src="./images/ex1_pic1.jpg" alt="">
+                <img class="back" src="./images/ex1_pic2.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

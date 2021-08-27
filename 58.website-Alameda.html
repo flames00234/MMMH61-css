@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Alameda</title>
+    <link rel="stylesheet" href="./fontawesome-free-5.15.3-web/css/all.css">
+    <style>
+        body {
+            margin: 0;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .mt-40 {
+            margin-top: 40px;
+        }
+
+        .navbar {
+            height: 50px;
+            /* background-color: #ccc; */
+        }
+
+        .container {
+            width: 960px;
+            margin: 0 auto;
+            height: 100%;
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+
+        .justify-content-between {
+            justify-content: space-between;
+        }
+
+        .justify-content-center {
+            justify-content: center;
+        }
+
+        .nav-left,
+        .nav-center,
+        .nav-right {
+            width: 33.3333%;
+            /* background-color: blueviolet; */
+        }
+
+        .nav-center {
+            /* display: flex;
+            justify-content: center; */
+            text-align: center;
+        }
+
+        .nav-right {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+        }
+
+        .buy-link {
+            background-color: #777;
+            height: 100%;
+            padding: 20px;
+            color: #fff;
+        }
+
+        .img-300 {
+            width: 300px;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        .img-300>img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .sub-title>span {
+            width: 300px;
+        }
+
+        .img-57 {
+            width: 500px;
+            height: 700px;
+        }
+
+        .img-57>img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .order-1 {
+            order: 1;
+        }
+
+        .order-2 {
+            order: 2;
+        }
+
+        .img-wrap {
+            align-items: stretch;
+        }
+
+        .img-70 {
+            width: 70%;
+        }
+
+        .img-30 {
+            width: 30%;
+        }
+
+        .img-70>img,
+        .img-30>img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 語意 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="row">
+                <div class="nav-left">
+                    <a href="#">Shop</a>
+                    <a href="#">Lookbook</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="nav-center logo">
+                    Alameda
+                </div>
+                <div class="nav-right">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="row justify-content-between">
+                <h2>New In</h2>
+                <a href="#" class="buy-link">Shop Now</a>
+            </div>
+
+            <div class="row justify-content-between mt-40">
+                <div class="items">
+                    <div class="img-300">
+                        <img src="https://images.squarespace-cdn.com/content/v1/5d02d798cc25920001b61816/1562770859141-0P92159IWN2ULCRMTOMN/ke17ZwdGBToddI8pDm48kNgFyjlEyNHlSWEjE-QCU1p7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UdLKTLgsLX9_T7LnpaostY9WYLb0IFNaX6bgMhY2dUNBWIB-7cQgYKo_bDpR6cEVkg/ulihu-charcoal-silk-linen-tunic_0326-v1-FINAL-copy.jpg"
+                            alt="">
+                    </div>
+
+                    <p>Linen Top/Blue</p>
+                </div>
+                <div class="items">
+                    <div class="img-300">
+                        <img src="https://images.squarespace-cdn.com/content/v1/5d02d798cc25920001b61816/1562770859141-0P92159IWN2ULCRMTOMN/ke17ZwdGBToddI8pDm48kNgFyjlEyNHlSWEjE-QCU1p7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UdLKTLgsLX9_T7LnpaostY9WYLb0IFNaX6bgMhY2dUNBWIB-7cQgYKo_bDpR6cEVkg/ulihu-charcoal-silk-linen-tunic_0326-v1-FINAL-copy.jpg"
+                            alt="">
+                    </div>
+
+                    <p>Linen Top/Blue</p>
+                </div>
+                <div class="items">
+                    <div class="img-300">
+                        <img src="https://images.squarespace-cdn.com/content/v1/5d02d798cc25920001b61816/1562770859141-0P92159IWN2ULCRMTOMN/ke17ZwdGBToddI8pDm48kNgFyjlEyNHlSWEjE-QCU1p7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UdLKTLgsLX9_T7LnpaostY9WYLb0IFNaX6bgMhY2dUNBWIB-7cQgYKo_bDpR6cEVkg/ulihu-charcoal-silk-linen-tunic_0326-v1-FINAL-copy.jpg"
+                            alt="">
+                    </div>
+
+                    <p>Linen Top/Blue</p>
+                </div>
+            </div>
+
+            <div class="row sub-title justify-content-center mt-40">
+                <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, natus?</span>
+            </div>
+
+            <div class="row justify-content-between mt-40">
+                <div class="demo-product-info">
+                    <div class="img-300">
+                        <img src="./website_imgs/product4.jpg" alt="">
+                    </div>
+
+                    <p>Lisa Shirt</p>
+                    <p>$50.00</p>
+                </div>
+                <div class="demo-product-model">
+                    <div class="img-57">
+                        <img src="./website_imgs/model1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-between mt-40">
+                <div class="demo-product-info order-2">
+                    <div class="img-300">
+                        <img src="./website_imgs/product5.jpg" alt="">
+                    </div>
+
+                    <p>Lisa Shirt</p>
+                    <p>$50.00</p>
+                </div>
+                <div class="demo-product-model order-1">
+                    <div class="img-57">
+                        <img src="./website_imgs/model2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mt-40">
+                <a href="#">View Lookbook</a>
+            </div>
+
+            <div class="row img-wrap mt-40">
+                <div class="img-70">
+                    <img src="./website_imgs/model3.jpg" alt="">
+                </div>
+                <div class="img-30">
+                    <img src="./website_imgs/model4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

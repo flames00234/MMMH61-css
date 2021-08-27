@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #afa;
+            margin: 10px;
+        }
+
+        .box1 {
+            border-radius: 20px;
+        }
+
+        .box2 {
+
+            border-radius: 10px 20px 30px 40px;
+        }
+
+        .box3 {
+
+            border-radius: 10px 50px 30px;
+        }
+
+        .box4 {
+            border-radius: 10px 50px;
+        }
+
+        .box5 {
+            border-radius: 30%;
+        }
+
+        .box6 {
+            border-radius: 100% 0 0 0;
+        }
+
+        .box7 {
+            border-radius: 20px / 50px;
+        }
+
+        .box8 {
+            border-radius: 20px 70px/ 50px 20px;
+            border: 1px solid #faf;
+            background-color: transparent;
+            animation: turn;
+            animation-iteration-count: infinite;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+        }
+
+        @keyframes turn {
+            0% {
+                transform: rotate(0);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">box</div>
+    <div class="box box2">box2</div>
+    <div class="box box3">box3</div>
+    <div class="box box4">box4</div>
+    <div class="box box5">box5</div>
+    <div class="box box6">box6</div>
+    <div class="box box7">airpod mini</div>
+    <div class="box box8"></div>
+</body>
+
+</html>

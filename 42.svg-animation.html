@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>svg animation</title>
+
+    <style>
+        .circle {
+            stroke-dasharray: 1194;
+            stroke-dashoffset: 1194;
+
+            animation: circle 1s linear;
+            animation-fill-mode: forwards;
+        }
+
+        .tick {
+            stroke-dasharray: 350;
+            stroke-dashoffset: 350;
+            animation: tick 1s linear;
+            animation-fill-mode: forwards;
+            animation-delay: .8s;
+        }
+
+        @keyframes circle {
+            0% {
+                stroke-dashoffset: 1194;
+                stroke: rgb(27, 108, 238);
+            }
+
+            100% {
+                stroke-dashoffset: 0;
+                stroke: rgb(133, 218, 126);
+            }
+        }
+
+        @keyframes tick {
+            0% {
+                stroke-dashoffset: 350;
+                stroke: rgb(27, 108, 238);
+            }
+
+            100% {
+                stroke-dashoffset: 0;
+                stroke: rgb(133, 218, 126);
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <svg width="400" height="400">
+            <circle cx="200" cy="200" r="190" class="circle" fill="none" stroke="lightgreen" stroke-width="20"
+                stroke-linecap="round" transform="rotate(-90 200 200)" />
+
+            <polyline points="88,214 173,284 304,138" fill="none" stroke="lightgreen" stroke-width="24"
+                stroke-linecap="round" stroke-linejoin="round" class="tick" />
+        </svg>
+
+    </div>
+</body>
+
+</html>

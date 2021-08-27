@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>justify-content</title>
+
+    <style>
+        .container {
+            /* 這裡下 flex 對 box 無效 */
+            /* display: flex; */
+            background-color: #ccc;
+            padding: 10px;
+        }
+
+        .row {
+            background-color: rgba(255, 99, 71, 0.431);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            gap: 5px;
+            height: 500px;
+        }
+
+        .box {
+            width: 185px;
+            height: 100px;
+            background-color: #afa;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="box">box1</div>
+            <div class="box">box2</div>
+            <div class="box">box3</div>
+        </div>
+    </div>
+</body>
+
+</html>

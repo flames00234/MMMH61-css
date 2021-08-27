@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mix blend mode</title>
+    <style>
+        .container {
+            width: 100%;
+            min-height: 100vh;
+            background: url('./images/city.jpg') center center/cover no-repeat;
+            overflow: hidden;
+        }
+
+        p {
+            font-size: 3rem;
+            color: #fff;
+            mix-blend-mode: screen;
+        }
+
+        p::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrap">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum rem incidunt exercitationem maiores
+                numquam, ipsa reprehenderit mollitia libero porro fugit? Consequatur dolorum consequuntur magnam earum
+                tenetur in nulla, dolores commodi ab soluta eum qui eius adipisci modi et asperiores tempora autem?
+                Placeat, quisquam sed? Quos sapiente enim sequi aliquam excepturi.</p>
+        </div>
+    </div>
+</body>
+
+</html>
